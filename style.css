@@ -1,0 +1,67 @@
+body{
+  margin: 0px;
+}
+ol{
+  border-right: blue  solid;
+  width: 150px;
+  margin: 0px;
+  padding: 20px;
+  height: 100px;
+}
+  a{color: black;
+    text-decoration-line: none;
+
+  }
+  h1{text-align:center; font-size:50px;
+    border-bottom: solid blue;
+    padding:20px;
+    margin: 0px;
+
+  }
+
+.사양{
+  border:ridge 4px silver;
+  background: black;
+  color:white;
+}
+
+.최저{border:ridge 4px silver;
+background: black;
+color:yellow;
+
+}
+.권장{border:ridge 4px silver;
+background: black;
+color:red;
+}
+.구분{border:ridge 4px silver;
+background: black;
+color: white;
+width: 150px;
+height:35px;
+}
+
+}
+#grid ol{
+  padding-left: 36px;
+
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+
+}
+#art{
+  padding-left: 97px;
+
+}
+
+@media(max-width:524px){
+  #grid{
+  display: block;
+
+
+
+
+  }
