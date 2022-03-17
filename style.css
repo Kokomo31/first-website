@@ -1,3 +1,33 @@
+table,th,td{ border: 2px ridge #026E81;
+background:#A1C7E0;
+text-align: center;
+
+
+}
+.공통{
+colspan="2";
+}
+
+
+}
+
+.구분{color: black;
+width: 200px;
+
+}
+.최저{color: red;
+width:300px;
+
+}
+.권장{color:green;
+width:300px;
+}
+.셀{background: #FF9933;
+}
+.그래픽카드{
+height: 200px;
+}
+}
 body{
   margin: 0px;
 }
@@ -19,27 +49,7 @@ ol{
 
   }
 
-.사양{
-  border:ridge 4px silver;
-  background: black;
-  color:white;
-}
 
-.최저{border:ridge 4px silver;
-background: black;
-color:yellow;
-
-}
-.권장{border:ridge 4px silver;
-background: black;
-color:red;
-}
-.구분{border:ridge 4px silver;
-background: black;
-color: white;
-width: 150px;
-height:35px;
-}
 
 }
 #grid ol{
