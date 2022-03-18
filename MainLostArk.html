@@ -3,6 +3,37 @@
 <head>
 <title>(연습)로스트아크 - 정보</title>
 </head>
+<script>
+function night_dayButton(self){
+    var daynight = document.querySelector('#art');
+  var target = document.querySelector('#art');
+
+  if(self.value === '야간모드'){
+    daynight.style.backgroundImage= 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.80) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
+    daynight.style.color='white';
+    document.querySelector('#night_day').value = '주간모드';
+
+      var i=0;
+    var arrayint = document.querySelectorAll('a.목록들');
+    while(i<arrayint.length){
+      arrayint[i].style.color='powderblue';
+      i=i+1;
+    }
+  } else {
+    daynight.style.backgroundImage='linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.02),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.10) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
+    daynight.style.color='black';
+    document.querySelector('#night_day').value = '야간모드';
+
+  var i=0;
+  var arrayint = document.querySelectorAll('a.목록들');
+  while(i<arrayint.length){
+    arrayint[i].style.color='yellow';
+    i=i+1;
+  }
+}
+}
+</script>
+
 <link rel="stylesheet" href="style.css">
 <body>
 
@@ -14,35 +45,12 @@
 <li><a class="목록들"  href="3.로스트아크의 비결.html">로스트아크의 비결</a></li>
 </ol>
 
+
 <div class="본문" id="art">
 <h2>LostArk는 무엇인가?</h2>
-<input id="night_day" type="button"  value="야간모드" onclick="
-var daynight = document.querySelector('#art');
-if(this.value === '야간모드'){
-  daynight.style.backgroundImage= 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.80) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
-  daynight.style.color='white';
-  document.querySelector('#night_day').value = '주간모드';
 
-    var i=0;
-  var arrayint = document.querySelectorAll('a.목록들');
-  while(i<arrayint.length){
-    arrayint[i].style.color='powderblue';
-    i=i+1;
-  }
-} else {
-  daynight.style.backgroundImage='linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.02),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.10) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
-  daynight.style.color='black';
-  document.querySelector('#night_day').value = '야간모드';
+ <input id="night_day" type="button"  value="야간모드" onclick="night_dayButton(this);
 
-
-var i=0;
-var arrayint = document.querySelectorAll('a.목록들');
-while(i<arrayint.length){
-  arrayint[i].style.color='yellow';
-  i=i+1;
-}
-
-}
 ">
 <p>
 <a href="https://namu.wiki/w/%EB%A1%9C%EC%8A%A4%ED%8A%B8%EC%95%84%ED%81%AC"
