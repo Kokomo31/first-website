@@ -9,13 +9,41 @@
 <h1 id="Mainh1"><a id="이모저모" href="MainLostArk.html">로스트아크 이모저모</a></h1>
 <div id="grid">
 <ol>
-<li><a href="1.로스트아크란.html">로스트아크</a></li>
-<li><a href="2.로스트아크의 인기.html">로스트아크의 인기</a></li>
-<li><a href="3.로스트아크의 비결.html">로스트아크의 비결</a></li>
+<li><a class="목록들"  href="1.로스트아크란.html">로스트아크</a></li>
+<li><a class="목록들"  href="2.로스트아크의 인기.html">로스트아크의 인기</a></li>
+<li><a class="목록들"  href="3.로스트아크의 비결.html">로스트아크의 비결</a></li>
 </ol>
 
-<div id="art">
+<div class="본문" id="art">
 <h2>LostArk는 무엇인가?</h2>
+<input id="night_day" type="button"  value="야간모드" onclick="
+var daynight = document.querySelector('#art');
+if(this.value === '야간모드'){
+  daynight.style.backgroundImage= 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.80) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
+  daynight.style.color='white';
+  document.querySelector('#night_day').value = '주간모드';
+
+    var i=0;
+  var arrayint = document.querySelectorAll('a.목록들');
+  while(i<arrayint.length){
+    arrayint[i].style.color='powderblue';
+    i=i+1;
+  }
+} else {
+  daynight.style.backgroundImage='linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.02),rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.10) ,rgba(0, 0, 0, 0.93) ,rgba(0, 0, 0, 0.93) )';
+  daynight.style.color='black';
+  document.querySelector('#night_day').value = '야간모드';
+
+
+var i=0;
+var arrayint = document.querySelectorAll('a.목록들');
+while(i<arrayint.length){
+  arrayint[i].style.color='yellow';
+  i=i+1;
+}
+
+}
+">
 <p>
 <a href="https://namu.wiki/w/%EB%A1%9C%EC%8A%A4%ED%8A%B8%EC%95%84%ED%81%AC"
 style="color:red; text-decoration:underline;">
@@ -61,14 +89,14 @@ allowfullscreen></iframe>
   <th class="구분">그래픽카드
   <td class="사양 최저 셀 그래픽카드">NVIDIA GeForce GTX 460 혹은 <br>AMD Radeon HD 6850이상
   <td class="사양 권장 셀 그래픽카드"><strong>1080p FHD</strong> <br>
-                          NVIDIA GeForce GTX 1050<br>
-                          AMD Radeon RX560 2G 이상<br><br>
-                          <strong>1440p QHD</strong><br>
-                          NVIDIA GeForce RTX 2070<br>
-                          AMD Radeon RX5700XT 이상<br><br>
-                          <strong>Ultra Specs(4K, UHD)</strong><br>
-                          NViDIA GeForce RTX 2080<br>
-                          AMD Radeon RX 6800 이상<br>
+    NVIDIA GeForce GTX 1050<br>
+    AMD Radeon RX560 2G 이상<br><br>
+    <strong>1440p QHD</strong><br>
+    NVIDIA GeForce RTX 2070<br>
+  AMD Radeon RX5700XT 이상<br><br>
+    <strong>Ultra Specs(4K, UHD)</strong><br>
+    NViDIA GeForce RTX 2080<br>
+    AMD Radeon RX 6800 이상<br>
   </tr>
   <tr>
   <th class="구분">API
