@@ -53,44 +53,24 @@ border-right: 3px solid blue;
       grid-row-end: 7;
 
 }
+
 .item2{
       grid-row-start: 1;
       grid-row-end: 3;
 
 }
+
 .Classicon{
-  opacity: 1;
+
   width: 250px;
   height: 250px;
   border-radius: 50%;
   float: left;
   margin-top: 50px;
   margin-left: 80px;
-  display: block;
+  transition: .5s ease;
   backface-visibility: hidden;
 }
-.Classicon:hover {
-   transition: .7s ease;
-  opacity: 0.3;
-
-
-}
-.동영상보기 {
-  position: absolute;
-  float: left;
-  color: white;
- font-size: 16px;
- margin-top: 150px;
- margin-left: 155px;
-
-}
-.class{
-  width: 200px;
-  height: 200px;
-position: 50% 50%;
-
-}
-
 
 .item3 {
 
@@ -114,6 +94,35 @@ position: 50% 50%;
       grid-row-start: 6;
       grid-row-end: 7;
 }
+
+
+
+
+.동영상보기 {
+  opacity: 0;
+  position: absolute;
+  float: left;
+  color: white;
+ font-size: 16px;
+ margin-top: 150px;
+ margin-left: 128px;
+  background-color: #4CAF50;
+  padding: 16px 32px;
+}
+
+.Classicon:hover {
+  opacity: 0.5;
+  transition: .5s ease;
+
+}
+
+.동영상보기:hover{
+  opacity: 1;
+  transition: .5s ease;
+}
+
+
+
 
 p {
   margin-left: 600px;
