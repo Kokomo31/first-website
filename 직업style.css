@@ -1,4 +1,9 @@
-
+.classSpeach{
+  font-size: 25px;
+}
+.classname{
+font-size: 40px;
+}
 
  .목록들{
   height: 400px;
@@ -29,39 +34,56 @@ body {
   margin: 10px;
 }
 .container  {
+  position: relative;
     background-color:#282828;
     border:  solid none;
     color: white;
 }
 .container {
+  text-align: center;
   display: grid;
-  grid-template-rows: 100px repeat(4 ,400px);
-  grid-template-columns:180px repeat(4 , 1669px);
+  grid-template-rows: 100px repeat(5 ,400px);
+  grid-template-columns:180px repeat(5 , 1669px);
 }
 .item1 {
 
-  text-align: center;
   background-color: white;
 border-right: 3px solid blue;
       grid-row-start: 1;
-      grid-row-end: 5;
+      grid-row-end: 7;
 
 }
 .item2{
-text-align: center;
       grid-row-start: 1;
       grid-row-end: 3;
 
 }
 .Classicon{
-  width: 200px;
-  height: 200px;
+  opacity: 1;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   float: left;
-margin-top: 50px;
-margin-left: 50px;
+  margin-top: 50px;
+  margin-left: 80px;
+  display: block;
+  backface-visibility: hidden;
 }
+.Classicon:hover {
+   transition: .7s ease;
+  opacity: 0.3;
 
+
+}
+.동영상보기 {
+  position: absolute;
+  float: left;
+  color: white;
+ font-size: 16px;
+ margin-top: 150px;
+ margin-left: 155px;
+
+}
 .class{
   width: 200px;
   height: 200px;
@@ -80,3 +102,21 @@ position: 50% 50%;
 
       grid-row-start: 4;
       grid-row-end: 5;
+    }
+.item5 {
+
+  grid-row-start: 5;
+  grid-row-end: 6;
+
+    }
+.item6 {
+
+      grid-row-start: 6;
+      grid-row-end: 7;
+}
+
+p {
+  margin-left: 600px;
+  text-align: justify;
+
+}

@@ -1,0 +1,9 @@
+
+
+<div class="item"><img class="Classicon" src=".jpg">
+<strong class="classname"><br><br>""</strong><br><br>
+<strong class="classSpeach">""</strong><br><br>
+
+ <p>
+ </p>
+ </dv>
