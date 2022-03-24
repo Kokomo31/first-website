@@ -36,10 +36,10 @@ body {
 .container  {
   position: relative;
     background-color:#282828;
-    border:  solid none;
     color: white;
 }
 .container {
+
   text-align: center;
   display: grid;
   grid-template-rows: 100px repeat(5 ,400px);
@@ -55,6 +55,8 @@ border-right: 3px solid blue;
 }
 
 .item2{
+  border-bottom: 4px inset #ffff8b;
+  border-top: 4px inset  #ffff8b;
       grid-row-start: 1;
       grid-row-end: 3;
 
@@ -70,26 +72,32 @@ border-right: 3px solid blue;
   margin-left: 80px;
   transition: .5s ease;
   backface-visibility: hidden;
+  display:inline;
 }
 
 .item3 {
-
+border-bottom: 4px inset #ffff8b;
+  border-top: 4px inset   #ffff8b;
       grid-row-start: 3;
       grid-row-end: 4;
 
 }
 .item4 {
-
+  border-bottom: 4px inset #ffff8b;
+  border-top: 4px inset #ffff8b;
       grid-row-start: 4;
       grid-row-end: 5;
     }
 .item5 {
-
+  border-bottom: 4px inset #ffff8b;
+  border-top: 4px inset #ffff8b;
   grid-row-start: 5;
   grid-row-end: 6;
 
     }
 .item6 {
+  border-bottom: 4px inset #ffff8b;
+  border-top: 4px inset #ffff8b;
 
       grid-row-start: 6;
       grid-row-end: 7;
@@ -104,7 +112,7 @@ border-right: 3px solid blue;
   float: left;
   color: white;
  font-size: 16px;
- margin-top: 150px;
+ margin-top: 140px;
  margin-left: 128px;
   background-color: #4CAF50;
   padding: 16px 32px;
@@ -128,4 +136,8 @@ p {
   margin-left: 600px;
   text-align: justify;
 
+}
+.item2 .item3  .item4 .item5 .item6{
+  border-bottom: 10px groove red;
+  border-top: 10px groove red;
 }
